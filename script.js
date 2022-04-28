@@ -1,7 +1,7 @@
 let display = document.getElementById("display")
 
 function clean() {
-    display.innerHTML = " "
+    display.innerHTML = ""
 }
 
 function insert(num) {
@@ -18,7 +18,7 @@ function calc() {
     var calculo = display.innerHTML 
     if (calculo) {
         display.innerHTML = eval(calculo)
-    } else {
+    } if (calculo == "") {
         display.innerHTML = "erro"
     }
 }
