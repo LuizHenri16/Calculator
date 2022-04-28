@@ -31,16 +31,15 @@ h1 {
     padding: .5rem;
     width: 100%;
     color: #fff;
+    font-weight: 100;
 }
 p {
     content: "";
-    width: 100%;
+    max-width: 100%;
     height: 4rem;
     background: rgba(255, 0, 0, 0.014);
 
-
     margin-top: .5rem;
-
 
     color: #fff;
     font-weight: 700;
@@ -74,6 +73,11 @@ button:hover {
     border-radius: 1rem;
 }
 
+button:active {
+    filter: brightness(.8);
+    transform: scale(.99);
+}
+
  .equal {
      width: 4rem;
     height: 6rem;
@@ -89,6 +93,54 @@ button:hover {
 .zero:hover {
     background: rgb(94, 125, 134);
     border-radius:.5rem ;
+}
+
+
+@media (min-width: 700px)  {
+    .calculator {
+        width: 26rem;
+        height: 31rem;
+    }
+
+    button  {
+        width: 6rem;
+        height: 4rem;
+    }
+
+    .zero {
+        width: 13rem;
+    }
+
+    .equal {
+        width: 6rem;
+        height: 9rem;
+    }
+    
+}
+
+@media (min-width: 1024px)  {
+    .calculator {
+        width: 31rem;
+        height: 36rem;
+
+    }
+
+    button  {
+        width: 7rem;
+        height: 5rem;
+        font-size: 1.8rem;
+        font-weight: 100;
+    }
+
+    .zero {
+        width: 14rem;
+    }
+
+    .equal {
+        width: 7rem;
+        height: 11rem;
+        font-size: 3rem;
+    }
 }
 
 
